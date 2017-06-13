@@ -7,7 +7,9 @@ var gulp = require("gulp"),
     babel = require("gulp-babel"),
     concat = require("gulp-concat"),
     imageResize = require("gulp-image-resize"),
-    rename = require("gulp-rename");
+    rename = require("gulp-rename"),
+    htmlmin = require('gulp-htmlmin');
+
 
 // --- Task for images
 // gulp.task("images", function() {
@@ -48,10 +50,10 @@ gulp.task("resize", function() {
         .pipe(gulp.dest("assets/img"))
 });
 
-// --- Task for pug
+// --- Task for HTML
 gulp.task("html", function() {
-    gulp.src("src/pug/**/*.pug")
-        .pipe(pug())
+    gulp.src("src/html/**/*.html")
+        .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest("assets/"));
 });
 
