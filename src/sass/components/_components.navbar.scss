@@ -1,0 +1,43 @@
+.nav {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  height: 100vh;
+  background: white;
+  padding-top: $inuit-global-spacing-unit-large;
+  transform: translateX(-250px);
+  transition: 0.2s;
+  &__item {
+    padding: $inuit-global-spacing-unit $inuit-global-spacing-unit-huge $inuit-global-spacing-unit $inuit-global-spacing-unit;
+    text-decoration: none;
+    color: $pf-blue;
+    position: relative;
+    &:after {
+      transition: 0.2s;
+      display: inline-block;
+      content: "";
+      width: 0%;
+      border-bottom: 3px solid $pf-pink;
+      position: absolute;
+      bottom: $inuit-global-spacing-unit-small;
+      left: 0;
+    }
+    &:hover {
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.active {
+  &:before {
+    display: inline-block;
+    content: "";
+    width: $inuit-global-spacing-unit-small;
+    border-bottom: 2px solid $pf-pink;
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+}
