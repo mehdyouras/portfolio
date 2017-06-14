@@ -1,0 +1,37 @@
+.socials {
+  background: $pf-pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 33%;
+  position: absolute;
+  right: 0;
+  bottom: inuit-rem(-200px);
+  overflow: hidden;
+  &__item {
+    padding: $inuit-global-spacing-unit-small 100%;
+    text-decoration: none;
+    color: $pf-blue;
+    font-size: $inuit-font-size-h2;
+    transition: 0.2s; 
+    &:hover {
+      color: lighten($pf-blue, 15)
+    }
+    &::before {
+      font-family: "FontAwesome";
+    }
+    &_behance::before {
+        content: "\f1b4";
+    }
+    &_github::before {
+      content: "\f09b";
+    }
+    &_linkedin::before {
+      content: "\f0e1";
+    }
+    &_dribbble::before {
+      content: "\f17d";
+    }
+  }
+}
