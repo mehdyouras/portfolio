@@ -71,6 +71,7 @@
   }
   &_no-border {
     border: 0;
-    padding: $inuit-global-spacing-unit-small $inuit-global-spacing-unit;
+    padding: $inuit-global-spacing-unit-small;
+    font-size: $inuit-font-size-h5;
   }
 }
