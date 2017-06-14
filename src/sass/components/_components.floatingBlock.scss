@@ -17,19 +17,4 @@
   display: flex;
   flex-direction: column;
   font-style: normal;
-  &__item {
-    &:before {
-      font-family: FontAwesome;
-      color: $pf-pink;
-      margin-right: $inuit-global-spacing-unit-small;
-      vertical-align: middle;
-    }
-    &_email:before {
-      content: "\f1fa";
-    }
-    &_phone:before {
-      font-family: FontAwesome;
-      content: "\f095";
-    }
-  }
 }
