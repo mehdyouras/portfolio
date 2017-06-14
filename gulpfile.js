@@ -11,44 +11,44 @@ var gulp = require("gulp"),
     htmlmin = require('gulp-htmlmin');
 
 
-// --- Task for images
-// gulp.task("images", function() {
-//     gulp.src("src/img/**", !"src/img/*.db")
+gulp.task("images", function() {
+    gulp.src("src/img/**", !"src/img/*.db")
+        .pipe(image([
+            image.jpegtran({ progressive: true }),
+            image.optipng({ optimizationLevel: 5 })
+        ]))
+        .pipe(gulp.dest("assets/img"));
+});
+
+// gulp.task("resize", function() {
+//     gulp.src("src/img/gallery*/*.jpg")
+//         .pipe(imageResize({
+//             height: 255,
+//         }))
 //         .pipe(image([
 //             image.jpegtran({ progressive: true }),
 //         ]))
-//         .pipe(gulp.dest("assets/img"));
+//         .pipe(gulp.dest("assets/img"))
+//     gulp.src("src/img/gallery*/*.jpg")
+//         .pipe(imageResize({
+//             height: 510,
+//         }))
+//         .pipe(rename(function (path) {
+//             path.basename += "-510";
+//         }))
+//         .pipe(image([
+//             image.jpegtran({ progressive: true }),
+//         ]))
+//         .pipe(gulp.dest("assets/img"))
+//     gulp.src("src/img/gallery*/*.jpg")
+//         .pipe(rename(function (path) {
+//             path.basename += "-full";
+//         }))
+//         .pipe(image([
+//             image.jpegtran({ progressive: true }),
+//         ]))
+//         .pipe(gulp.dest("assets/img"))
 // });
-
-gulp.task("resize", function() {
-    gulp.src("src/img/gallery*/*.jpg")
-        .pipe(imageResize({
-            height: 255,
-        }))
-        .pipe(image([
-            image.jpegtran({ progressive: true }),
-        ]))
-        .pipe(gulp.dest("assets/img"))
-    gulp.src("src/img/gallery*/*.jpg")
-        .pipe(imageResize({
-            height: 510,
-        }))
-        .pipe(rename(function (path) {
-            path.basename += "-510";
-        }))
-        .pipe(image([
-            image.jpegtran({ progressive: true }),
-        ]))
-        .pipe(gulp.dest("assets/img"))
-    gulp.src("src/img/gallery*/*.jpg")
-        .pipe(rename(function (path) {
-            path.basename += "-full";
-        }))
-        .pipe(image([
-            image.jpegtran({ progressive: true }),
-        ]))
-        .pipe(gulp.dest("assets/img"))
-});
 
 // --- Task for HTML
 gulp.task("html", function() {
@@ -93,5 +93,5 @@ gulp.task("watch", function() {
 });
 
 // --- Aliases
-gulp.task("default", ["css", "html", "js", "resize", "fonts", "favicon"]);
+gulp.task("default", ["css", "html", "js", "fonts", "favicon", "images"]);
 gulp.task("work", ["default", "watch"]);
