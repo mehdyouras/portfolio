@@ -75,12 +75,13 @@
  */
 
 // SETTINGS
-@import "node_modules/inuitcss/settings/example.settings.config";
 @import "node_modules/inuitcss/settings/settings.core";
-@import "node_modules/inuitcss/settings/example.settings.global";
 
 
+// COLORS
 
+$pf-blue : "#223A5E";
+$pf-pink : "#F7CAC9";
 
 
 // TOOLS
@@ -137,7 +138,6 @@
 // COMPONENTS
 //
 // Build and include your project’s UI Compoments here.
-@import "node_modules/inuitcss/components/example.components.buttons";
 
 
 
