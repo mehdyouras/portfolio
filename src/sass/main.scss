@@ -108,10 +108,12 @@ $pf-pink : #F7CAC9;
 
 // ELEMENTS
 @import "node_modules/inuitcss/elements/elements.page";
+body {display: flex; flex-direction: column;} // STICKY FOOTER
 @import "node_modules/inuitcss/elements/elements.headings";
 @import "node_modules/inuitcss/elements/elements.images";
 @import "node_modules/inuitcss/elements/elements.tables";
 @import "elements/elements.paragraphs";
+@import "elements/elements.anchor";
 
 
 
@@ -148,6 +150,8 @@ $pf-pink : #F7CAC9;
 @import "components/components.cta";
 @import "components/components.card";
 @import "components/components.wrapper";
+@import "components/components.latestPosts";
+@import "components/components.latestWorks";
 
 
 
