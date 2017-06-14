@@ -1,6 +1,11 @@
 .definitions {
   &__term {
+    letter-spacing: 1px;
     font-weight: bold;
+    margin-bottom: $inuit-global-spacing-unit-small;
+    &:nth-child(n+2) {
+      margin-top: $inuit-global-spacing-unit;
+    }
   }
   &__desc {
     margin-left: 0;

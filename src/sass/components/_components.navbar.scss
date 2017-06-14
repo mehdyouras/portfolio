@@ -8,6 +8,7 @@
   padding-top: $inuit-global-spacing-unit-large;
   transform: translateX(-250px);
   transition: 0.2s;
+  z-index: 5;
   &__item {
     padding: $inuit-global-spacing-unit $inuit-global-spacing-unit-huge $inuit-global-spacing-unit $inuit-global-spacing-unit;
     text-decoration: none;
