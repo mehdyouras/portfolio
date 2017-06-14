@@ -1,0 +1,19 @@
+.icons {
+  &:before {
+    font-family: FontAwesome;
+    color: $pf-pink;
+    vertical-align: middle;
+  }
+  &_email:before {
+    content: "\f1fa";
+    margin-right: $inuit-global-spacing-unit-small;
+  }
+  &_phone:before {
+    content: "\f095";
+    margin-right: $inuit-global-spacing-unit-small + 3px;
+  }
+  &_location:before {
+    content: "\f041";
+    margin-right: $inuit-global-spacing-unit-small + 5px;
+  }
+}
