@@ -16,7 +16,7 @@
       right: 0;
       width: $inuit-global-spacing-unit-large - 10px;
       content: "";
-      border-bottom: 3px solid #F7CAC9;
+      border-bottom: 3px solid white;
     }
     &::before {
       transition: 0.4s;
@@ -26,25 +26,45 @@
       left: 0;
       width: $inuit-global-spacing-unit-large - 10px;
       content: "";
-      border-bottom: 3px solid #F7CAC9;
+      border-bottom: 3px solid white;
     }
     &:hover {
       &::before {
         top: 35%;
-        border-color: #223A5E;
+        border-color: white;
       }
       &::after {
         top: 65%;
-        border-color: #223A5E;
+        border-color: white;
       }
     }
   }
   &_light {
     color: white;
     border: 4px solid $pf-pink;
+    &::after, &::before {
+      border-color: $pf-pink;
+    }
+    &:hover {
+      &::after, &::before {
+        border-color: white;
+      }
+    }
   }
   &_dark {
     color: $pf-blue;
     border: 4px solid $pf-blue;
+    &::after, &::before {
+      border-color: $pf-pink;
+    }
+    &:hover {
+      &::after, &::before {
+        border-color: $pf-blue;
+      }
+    }
+  }
+  &_white {
+    color: white;
+    border: 4px solid white;
   }
 }
