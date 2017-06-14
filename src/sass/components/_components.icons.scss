@@ -16,4 +16,9 @@
     content: "\f041";
     margin-right: $inuit-global-spacing-unit-small + 5px;
   }
+  &_github:before {
+    content: "\f09b";
+    vertical-align: inherit;
+    margin-right: $inuit-global-spacing-unit-small;
+  }
 }
