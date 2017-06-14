@@ -21,6 +21,8 @@ const closeNav = function(oEvent) {
 
 const fPageIsLoaded = function() {
     document.querySelector(".hamburger").addEventListener("click", openNav);
+    document.querySelector(".hamburger").addEventListener("focus", openNav);
+    document.querySelector(".nav__item:last-child").addEventListener("blur", closeNav);
 }
 
 window.addEventListener("load", fPageIsLoaded);
