@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+
 @font-face {
   font-family: 'FontAwesome';
   src: url('../fonts/font-awesome/fontawesome-webfont.eot?v=4.7.0');
@@ -5,3 +8,12 @@
   font-weight: normal;
   font-style: normal;
 };
+
+* {
+  font-family: 'Roboto', SansSerif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', SansSerif;
+}
+
