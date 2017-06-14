@@ -6,15 +6,17 @@
   height: 100vh;
   background: white;
   padding-top: $inuit-global-spacing-unit-large;
-  transform: translateX(-250px);
+  transform: translateX(-290px);
   transition: 0.2s;
   z-index: 5;
+  overflow: hidden;
   &__item {
-    padding: $inuit-global-spacing-unit $inuit-global-spacing-unit-huge $inuit-global-spacing-unit $inuit-global-spacing-unit;
+    padding: $inuit-global-spacing-unit $inuit-global-spacing-unit-large $inuit-global-spacing-unit $inuit-global-spacing-unit-large;
     text-decoration: none;
     color: $pf-blue;
     position: relative;
     overflow-y: hidden;
+    text-transform: uppercase;
     &:after {
       z-index: -1;
       transition: 0.2s;

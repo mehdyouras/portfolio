@@ -3,7 +3,7 @@ const openNav = function(oEvent) {
     let $nav = document.querySelector(".nav");
     $nav.style.transform = "translatex(0)";
     document.addEventListener("click", function(oEvent) {
-        if(oEvent.pageX > 250) {
+        if(oEvent.pageX > $nav.offsetWidth) {
             closeNav(oEvent);
         }
     });
@@ -16,7 +16,7 @@ const openNav = function(oEvent) {
 }
 const closeNav = function(oEvent) {
     oEvent.preventDefault();
-    document.querySelector(".nav").style.transform = "translatex(-250px)";
+    document.querySelector(".nav").style.transform = "translatex(-290px)";
 }
 
 const fPageIsLoaded = function() {
