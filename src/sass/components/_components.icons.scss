@@ -21,4 +21,9 @@
     vertical-align: inherit;
     margin-right: $inuit-global-spacing-unit-small;
   }
+  &_arrow-left:before {
+    content: "\f060";
+    vertical-align: inherit;
+    margin-right: $inuit-global-spacing-unit-small;
+  }
 }
