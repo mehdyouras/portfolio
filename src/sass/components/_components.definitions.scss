@@ -1,4 +1,15 @@
 .definitions {
+  @media screen and (min-width: 765px) {
+    display: flex;
+    margin-right: $inuit-global-spacing-unit-large;
+  }
+  &__item {
+    @media screen and (min-width: 765px) {
+      &:nth-child(n+2) {
+        margin-left: $inuit-global-spacing-unit-large;
+      }
+    }
+  }
   &__term {
     letter-spacing: 1px;
     font-weight: bold;
