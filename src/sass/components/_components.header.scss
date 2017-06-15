@@ -5,6 +5,10 @@
   position: relative;
   background-size: 120%;
   background-position: 30% 0%;
+  @media screen and (min-width: 596px) {
+    height: inuit-rem(600px);
+    background-size: 160%;
+  }
 }
 
 .siteHeader {
@@ -16,4 +20,15 @@
 .logo {
   height: 50px;
   margin-right: 24px;
+}
+
+.headercols {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin-top: inuit-rem(-80px);
+  @media screen and (min-width: 596px) {
+    margin-top: 0;
+    justify-content: space-around;
+  }
 }
