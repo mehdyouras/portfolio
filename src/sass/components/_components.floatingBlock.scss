@@ -26,6 +26,7 @@
   }
   &_thin {
     margin-top: inuit-rem(-70px);
+    //max-width: 320px;
     @media screen and (min-width: 596px) {
       width: inuit-rem(320px);
       margin-top: inuit-rem(-360px);
