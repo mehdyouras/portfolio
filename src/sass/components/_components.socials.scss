@@ -1,22 +1,47 @@
+.socials-container {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  @media screen and (min-width: 596px) {
+    margin: auto;
+    margin-top: inuit-rem(-127px);
+    width: auto;
+  }
+}
+
 .socials {
   background: $pf-pink;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 33%;
-  position: absolute;
+  width: 100%;
   right: 0;
-  bottom: inuit-rem(-200px);
   overflow: hidden;
+  @media screen and (min-width: 596px) {
+    flex-direction: row;
+    right: 10%;
+    bottom: 0;
+    background: none;
+    margin-bottom: $inuit-global-spacing-unit;
+    justify-content: center;
+  }
   &__item {
     padding: $inuit-global-spacing-unit-small 100%;
     text-decoration: none;
     color: $pf-blue;
     font-size: $inuit-font-size-h2;
-    transition: 0.2s; 
+    transition: 0.2s;
     &:hover {
       color: lighten($pf-blue, 15)
+    }
+    @media screen and (min-width: 596px) {
+      padding: 0;
+      color: white;
+      padding: 0 $inuit-global-spacing-unit;
+      &:hover {
+        color: $pf-pink;
+      }
     }
     &::before {
       font-family: "FontAwesome";
