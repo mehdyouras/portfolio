@@ -1,0 +1,13 @@
+.figure {
+  border-top: 4px solid $pf-blue;
+  &__caption {
+    font-style: italic;
+    background: $pf-pink;
+    color: $pf-blue;
+    padding: $inuit-global-spacing-unit-small;
+  }
+}
+
+.wysiwyg {
+  padding: 0 $inuit-global-spacing-unit-small;
+}
