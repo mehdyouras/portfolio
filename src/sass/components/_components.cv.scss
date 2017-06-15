@@ -1,0 +1,29 @@
+.cv {
+  padding: 0 $inuit-global-spacing-unit-small;
+  &__title {
+    text-transform: uppercase;
+    color: $pf-blue;
+    font-weight: bold;
+    font-family: "Open Sans", SansSerif;
+    &:nth-child(n+2) {
+      margin-top: $inuit-global-spacing-unit-large;
+    }
+    &:after {
+      content: "";
+      width: 80%;
+      display: block;
+      border-bottom: 4px solid $pf-pink;
+      margin-top: $inuit-global-spacing-unit-small;
+      margin-bottom: $inuit-global-spacing-unit;
+    }
+    &_right {
+      text-align: right;
+      &:after {
+        float: right;
+      }
+    }
+  }
+  &__content {
+    margin-left: 0;
+  }
+}

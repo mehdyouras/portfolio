@@ -32,10 +32,10 @@
   }
   &_smile:before {
     content: "\f118";
-    margin-right: $inuit-global-spacing-unit-small;
+    margin-right: $inuit-global-spacing-unit-small + 6px;
   }
   &_battery:before {
     content: "\f240";
-    margin-right: $inuit-global-spacing-unit-small;
+    margin-right: $inuit-global-spacing-unit-small - 1px;
   }
 }
