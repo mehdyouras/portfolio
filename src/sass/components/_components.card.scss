@@ -16,6 +16,8 @@
 
 .card {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   background: white;
   padding: $inuit-global-spacing-unit;

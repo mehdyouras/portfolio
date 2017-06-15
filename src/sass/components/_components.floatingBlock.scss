@@ -30,12 +30,7 @@
     @media screen and (min-width: 596px) {
       width: inuit-rem(320px);
       margin-top: inuit-rem(-360px);
-      margin-left: $inuit-global-spacing-unit-small;
+      margin-left: auto;
     }
   }
-}
-.contactInfos {
-  display: flex;
-  flex-direction: column;
-  font-style: normal;
 }
