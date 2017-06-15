@@ -21,18 +21,3 @@
   height: 50px;
   margin-right: 24px;
 }
-
-.headercols {
-  display: flex;
-  align-items: flex-start;
-  position: relative;
-  margin-top: inuit-rem(-80px);
-  margin-right: $inuit-global-spacing-unit-small;
-  margin-left: $inuit-global-spacing-unit-small;
-  @media screen and (min-width: 596px) {
-    margin-top: 0;
-    justify-content: space-around;
-    margin-right: 0;
-    margin-left: 0;
-  }
-}
