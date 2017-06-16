@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="header">
-        <h1 class="u-hidden-visually">Mehdy Ouras</h1>
+        <h1 class="u-hidden-visually">Blog</h1>
         <div class="siteHeader">
             <div tabindex="0" class="hamburger">
                 <span class="u-hidden-visually">Menu hamburger</span>
@@ -18,11 +18,11 @@
         </div>
         <nav class="nav">
             <h2 class="u-hidden-visually">Navigation principale</h2>
-            <a href="#" class="nav__item">Accueil</a>
-            <a href="#" class="nav__item">Portfolio</a>
-            <a href="#" class="nav__item">CV</a>
-            <a href="#" class="nav__item active">Blog</a>
-            <a href="#" class="nav__item">Me contacter</a>
+            <a href="index.html" class="nav__item">Accueil</a>
+            <a href="portfolio.html" class="nav__item">Portfolio</a>
+            <a href="cv.html" class="nav__item">CV</a>
+            <a href="blog.html" class="nav__item active">Blog</a>
+            <a href="contact.html" class="nav__item">Me contacter</a>
         </nav>
         <nav class="socials">
             <h2 class="u-hidden-visually">Mes réseaux sociaux</h2>
@@ -43,26 +43,29 @@
             </address>
             <a class="cta cta_lines cta_light" href="cv.html">CV</a>
         </section>
-        <ol class="o-list-bare card-wrapper">
-            <li class="card card_no-padding">
-                <header class="card__header">
-                    <div class="tags">
-                        <span class="tags__item">Front-end</span>
-                        <span class="tags__item">HTML</span>
-                        <span class="tags__item">CSS</span>
-                        <span class="tags__item">JS</span>
+        <section>
+            <h3 class="u-hidden-visually">Liste de mes publications</h3>
+            <ol class="o-list-bare card-wrapper">
+                <li class="card card_no-padding">
+                    <header class="card__header">
+                        <div class="tags">
+                            <span class="tags__item">Front-end</span>
+                            <span class="tags__item">HTML</span>
+                            <span class="tags__item">CSS</span>
+                            <span class="tags__item">JS</span>
+                        </div>
+                        <a href="post.html" class="card__title">à la découverte de ReactJS</a>
+                        <time datetime="2017-09-12">12/09/2017</time>
+                    </header>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At deserunt id laudantium pariatur? Aliquid consequuntur, dignissimos error est labore provident quas. Autem culpa doloremque, dolorum facere nemo non perspiciatis unde.
+                    </p>
+                    <div class="u-center-text">
+                        <a class="cta cta_lines cta_dark cta_small" href="post.html">Lire plus<span class="u-hidden-visually"> sur à la découverte de reactjs</span></a>
                     </div>
-                    <a class="card__title">à la découverte de ReactJS</a>
-                    <time>12/09/2017</time>
-                </header>
-                <p class="card__text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At deserunt id laudantium pariatur? Aliquid consequuntur, dignissimos error est labore provident quas. Autem culpa doloremque, dolorum facere nemo non perspiciatis unde.
-                </p>
-                <div class="u-center-text">
-                    <a class="cta cta_lines cta_dark cta_small" href="#">Lire plus<span class="u-hidden-visually"> sur à la découverte de reactjs</span></a>
-                </div>
-            </li>
-        </ol>
+                </li>
+            </ol>
+        </section>
     </section>
     <footer class="footer">
         <div class="footer__content">
@@ -77,7 +80,7 @@
                     <dd class="definitions__desc icons_pink icons icons_phone">0471 79 85 15</dd>
                 </dl>
             </div>
-            <a class="cta cta_lines cta_white cta_small" href="#">M'engager</a>
+            <a class="cta cta_lines cta_white cta_small" href="contact.html">M'engager</a>
         </div>
         <div class="copyright">
             <small>Copyright © 2017 - Mehdy Ouras. All rights reserved</small>
