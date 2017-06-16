@@ -1,0 +1,71 @@
+.nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  flex-direction: column;
+  height: 100vh;
+  background: white;
+  padding-top: $inuit-global-spacing-unit-large;
+  transform: translateX(-290px);
+  transition: 0.2s;
+  z-index: 5;
+  overflow: hidden;
+  &__item {
+    padding: $inuit-global-spacing-unit $inuit-global-spacing-unit-large $inuit-global-spacing-unit $inuit-global-spacing-unit-large;
+    text-decoration: none;
+    color: $pf-blue;
+    position: relative;
+    overflow-y: hidden;
+    text-transform: uppercase;
+    &:after {
+      z-index: -1;
+      transition: 0.2s;
+      display: inline-block;
+      content: "";
+      width: 0%;
+      height: 300px;
+      background: $pf-pink;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      @media screen and (min-width: 1024px) {
+        background: none;
+        border-bottom: 3px solid $pf-pink;
+      }
+    }
+    &:hover {
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    background: none;
+    height: auto;
+    transform: none;
+    position: static;
+    margin-left: auto;
+    &__item {
+      color: white;
+      padding: $inuit-global-spacing-unit;
+    }
+  }
+  @media screen and (min-width: 2300px) {
+    margin-left: $inuit-global-spacing-unit;
+  }
+}
+
+.active {
+  &:before {
+    display: inline-block;
+    content: "";
+    width: inuit-rem(20px);
+    border-bottom: 2px solid $pf-pink;
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+}

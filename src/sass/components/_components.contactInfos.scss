@@ -1,5 +1,7 @@
 .contactInfos {
-  display: flex;
-  flex-direction: column;
-  font-style: normal;
+  &__item {
+    display: block;
+    font-style: normal;
+    color: white;
+  }
 }

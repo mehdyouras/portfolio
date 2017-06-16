@@ -1,29 +1,18 @@
-.mainHeader {
-  background: url('../img/header-bcg.jpg');
-  padding-top: $inuit-global-spacing-unit;
-  height: inuit-rem(300px);
-  position: relative;
-  background-size: 120%;
-  background-position: 30% 0%;
-  @media screen and (min-width: 596px) {
-    height: inuit-rem(600px);
-    background-size: cover;
+.header {
+  margin-top: $inuit-global-spacing-unit;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  @media screen and (min-width: 400px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
   @media screen and (min-width: 1024px) {
-    height: 100vh;
-    background-size: cover;
-    width: 30%;
-    position: fixed;
+    flex-direction: row-reverse;
+    margin-top: 0;
   }
-}
-
-.siteHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  height: 50px;
-  margin-right: 24px;
+  @media screen and (min-width: 2300px) {
+    justify-content: center;
+  }
 }

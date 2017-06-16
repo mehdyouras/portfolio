@@ -1,29 +1,50 @@
 .card-wrapper {
   padding: 0 $inuit-global-spacing-unit-small;
   margin-bottom: $inuit-global-spacing-unit;
-  &_large {
-    display: none;
-    @media screen and (min-width: 596px) {
-      display: block;
-    }
-  }
-  &_small {
-    @media screen and (min-width: 596px) {
-      display: none;
-    }
-  }
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background: white;
   padding: $inuit-global-spacing-unit;
   box-shadow: 0px 2px 9px 2px rgba(0,0,0,0.09);
-}
-
-.introductiontext {
-  padding: 0 $inuit-global-spacing-unit-small;
+  max-width: 30em;
+  margin: auto;
+  &:nth-of-type(n+2) {
+    margin-top: $inuit-global-spacing-unit;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-size: $inuit-font-size-h4;
+    font-family: "Open Sans", SansSerif;
+    font-weight: bold;
+    display: block;
+    color: white;
+  }
+  &__links {
+    margin:auto;
+    padding-bottom: $inuit-global-spacing-unit;
+    text-align: center;
+    font-size: $inuit-font-size-h2;
+  }
+  &__link {
+    color: $pf-blue;
+  }
+  &__image {
+    margin-bottom: $inuit-global-spacing-unit;
+    border-bottom: 4px solid $pf-pink;
+  }
+  &__text {
+    margin: $inuit-global-spacing-unit;
+  }
+  &__header {
+    background: $pf-blue;
+    padding: $inuit-global-spacing-unit;
+    color: white;
+  }
+  &_no-padding {
+    padding: 0;
+  }
+  &_thin {
+    max-width: 20em;
+  }
 }
