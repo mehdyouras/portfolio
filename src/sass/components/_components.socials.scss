@@ -32,10 +32,11 @@
   @media screen and (min-width: 1024px) {
     position: fixed;
     left: 0;
-    top: $inuit-global-spacing-unit;
+    top: 0;
     bottom: auto;
     right: auto;
     width: 30%;
+    justify-content: flex-end;
   }
   &__item {
     padding: $inuit-global-spacing-unit-small 100%;
@@ -54,6 +55,9 @@
       &:hover {
         color: $pf-pink;
       }
+    }
+    @media screen and (min-width: 1024px) {
+      padding: $inuit-global-spacing-unit;
     }
     &::before {
       font-family: "FontAwesome";
