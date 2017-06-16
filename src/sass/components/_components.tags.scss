@@ -1,0 +1,8 @@
+.tags {
+  margin-bottom: $inuit-global-spacing-unit-small;
+  &__item {
+    //  background: $pf-blue;
+    border: 2px solid $pf-pink;
+    padding: $inuit-global-spacing-unit-tiny $inuit-global-spacing-unit-small;
+  }
+}

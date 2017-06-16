@@ -6,8 +6,6 @@
 .card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background: white;
   padding: $inuit-global-spacing-unit;
   box-shadow: 0px 2px 9px 2px rgba(0,0,0,0.09);
@@ -15,5 +13,31 @@
   margin: auto;
   &:nth-child(n+2) {
     margin-top: $inuit-global-spacing-unit;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-size: $inuit-font-size-h4;
+    font-family: "Open Sans", SansSerif;
+    font-weight: bold;
+    display: block;
+  }
+  &__links {
+    margin: auto;
+    font-size: $inuit-font-size-h2;
+  }
+  &__link {
+    color: $pf-blue;
+  }
+  &__image {
+    margin-bottom: $inuit-global-spacing-unit;
+    border-bottom: 4px solid $pf-pink;
+  }
+  &__header {
+    background: $pf-blue;
+    padding: $inuit-global-spacing-unit;
+    color: white;
+  }
+  &_portfolio {
+    padding: 0;
   }
 }

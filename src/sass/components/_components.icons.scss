@@ -1,8 +1,21 @@
 .icons {
   &:before {
     font-family: FontAwesome;
-    color: $pf-pink;
+    //color: $pf-pink;
     vertical-align: middle;
+    transition: 0.2s;
+  }
+  &_pink:before {
+    color: $pf-pink;
+  }
+  &_pink:hover:before {
+    color: white;
+  }
+  &_blue:before{
+    color: $pf-blue;
+  }
+  &_blue:hover:before{
+    color: $pf-pink;
   }
   &_email:before {
     content: "\f1fa";
@@ -37,5 +50,9 @@
   &_battery:before {
     content: "\f240";
     margin-right: $inuit-global-spacing-unit-small - 1px;
-  }
+  }&_link:before {
+     content: "\f08e";
+     margin-right: $inuit-global-spacing-unit-small - 1px;
+   }
+
 }
