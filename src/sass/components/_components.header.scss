@@ -1,12 +1,12 @@
 .mainHeader {
-  background: url('../img/header-bcg.jpg');
+  //background: url('../img/header-bcg.jpg');
   padding-top: $inuit-global-spacing-unit;
-  height: inuit-rem(300px);
+  //height: inuit-rem(300px);
   position: relative;
   background-size: 120%;
   background-position: 30% 0%;
   @media screen and (min-width: 596px) {
-    height: inuit-rem(600px);
+    //height: inuit-rem(600px);
     background-size: cover;
   }
   @media screen and (min-width: 1024px) {
@@ -21,6 +21,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: $inuit-global-spacing-unit-large;
+  @media screen and (min-width: 485px) {
+    margin-bottom: $inuit-global-spacing-unit;
+  }
 }
 
 .logo {

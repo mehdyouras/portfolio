@@ -1,4 +1,4 @@
-.nav {
+/*.nav {
   display: flex;
   position: fixed;
   top: 0;
@@ -39,25 +39,20 @@
       }
     }
   }
-}
+}*/
 
-.nav_large {
+.nav {
   display: none;
   @media screen and (min-width: 1024px) {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     margin-bottom: $inuit-global-spacing-unit;
     margin-top: $inuit-global-spacing-unit-small;
-    margin-left: $inuit-global-spacing-unit-small;
-    @media screen and (min-width: 1500px) {
-      justify-content: flex-end;
-      margin-left: 0;
-      margin-right: $inuit-global-spacing-unit-small;
-    }
+    margin-right: $inuit-global-spacing-unit-small;
     &__item {
       text-transform: uppercase;
       padding: $inuit-global-spacing-unit $inuit-global-spacing-unit-small;
-      color: $pf-blue;
+      color: white;
       position: relative;
       @media screen and (min-width: 1070px) {
         padding: $inuit-global-spacing-unit;

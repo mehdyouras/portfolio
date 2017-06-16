@@ -2,14 +2,14 @@
   padding: 0 $inuit-global-spacing-unit-small;
   margin-bottom: $inuit-global-spacing-unit;
   &_large {
-    display: none;
+    //display: none;
     @media screen and (min-width: 596px) {
       display: block;
     }
   }
   &_small {
     @media screen and (min-width: 596px) {
-      display: none;
+      //display: none;
     }
   }
 }
