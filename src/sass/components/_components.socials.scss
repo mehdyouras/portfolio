@@ -1,4 +1,6 @@
 .socials {
+  @media screen and (min-width: 400px) {
+  }
   &__item {
     text-decoration: none;
     font-size: $inuit-font-size-h2;
