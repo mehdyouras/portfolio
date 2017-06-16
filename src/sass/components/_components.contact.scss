@@ -1,5 +1,10 @@
 .contact {
   padding: 0 $inuit-global-spacing-unit-small;
+  @media screen and (min-width: 424px) {
+    max-width: 30em;
+    width: 65%;
+    margin: auto;
+  }
   &__form {
     display: flex;
     flex-direction: column;

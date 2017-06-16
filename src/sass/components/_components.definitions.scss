@@ -3,10 +3,16 @@
     display: flex;
     margin-right: $inuit-global-spacing-unit-large;
   }
+  @media screen and (min-width: 1024px) {
+    flex-direction: column;
+  }
   &__item {
     @media screen and (min-width: 765px) {
       &:nth-child(n+2) {
         margin-left: $inuit-global-spacing-unit-large;
+        @media screen and (min-width: 1024px) {
+          margin-left: 0;
+        }
       }
     }
   }

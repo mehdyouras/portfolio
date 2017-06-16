@@ -7,6 +7,9 @@
     margin-top: inuit-rem(-127px);
     width: auto;
   }
+  @media screen and (min-width: 1024px) {
+    margin-top: 0;
+  }
 }
 
 .socials {
@@ -25,6 +28,14 @@
     background: none;
     margin-bottom: $inuit-global-spacing-unit;
     justify-content: center;
+  }
+  @media screen and (min-width: 1024px) {
+    position: fixed;
+    left: 0;
+    top: $inuit-global-spacing-unit;
+    bottom: auto;
+    right: auto;
+    width: 30%;
   }
   &__item {
     padding: $inuit-global-spacing-unit-small 100%;
