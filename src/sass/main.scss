@@ -114,6 +114,8 @@ body {display: flex; flex-direction: column;} // STICKY FOOTER
 @import "node_modules/inuitcss/elements/elements.tables";
 @import "elements/elements.paragraphs";
 @import "elements/elements.anchor";
+@import "elements/elements.body";
+
 
 
 
@@ -142,29 +144,12 @@ body {display: flex; flex-direction: column;} // STICKY FOOTER
 // COMPONENTS
 //
 // Build and include your project’s UI Compoments here.
-@import "components/components.navbar";
+@import "components/components.nav";
 @import "components/components.hamburger";
 @import "components/components.header";
 @import "components/components.socials";
-@import "components/components.floatingBlock";
-@import "components/components.cta";
-@import "components/components.card";
-@import "components/components.wrapper";
-@import "components/components.latestPosts";
-@import "components/components.latestWorks";
 @import "components/components.footer";
 @import "components/components.definitions";
-@import "components/components.icons";
-@import "components/components.features";
-@import "components/components.cv";
-@import "components/components.contact";
-@import "components/components.post";
-@import "components/components.flexible";
-@import "components/components.contactInfos";
-@import "components/components.headercols";
-@import "components/components.mehdyExcerpt";
-@import "components/components.rightcolumn";
-@import "components/components.body";
 
 
 

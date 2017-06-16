@@ -1,4 +1,4 @@
-/*.nav {
+.nav {
   display: flex;
   position: fixed;
   top: 0;
@@ -10,9 +10,6 @@
   transition: 0.2s;
   z-index: 5;
   overflow: hidden;
-  @media screen and (min-width: 1024px) {
-    display: none;
-  }
   &__item {
     padding: $inuit-global-spacing-unit $inuit-global-spacing-unit-large $inuit-global-spacing-unit $inuit-global-spacing-unit-large;
     text-decoration: none;
@@ -39,43 +36,7 @@
       }
     }
   }
-}*/
-
-.nav {
-  display: none;
-  @media screen and (min-width: 1024px) {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: $inuit-global-spacing-unit;
-    margin-top: $inuit-global-spacing-unit-small;
-    margin-right: $inuit-global-spacing-unit-small;
-    &__item {
-      text-transform: uppercase;
-      padding: $inuit-global-spacing-unit $inuit-global-spacing-unit-small;
-      color: white;
-      position: relative;
-      @media screen and (min-width: 1070px) {
-        padding: $inuit-global-spacing-unit;
-      }
-      &:after {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        content: "";
-        display: block;
-        border-bottom: 2px solid $pf-pink;
-        width: 0;
-        transition: 0.2s;
-      }
-      &:hover {
-        &:after {
-          width: 100%;
-        }
-      }
-    }
-  }
 }
-
 
 .active {
   &:before {
@@ -86,8 +47,5 @@
     position: absolute;
     top: 50%;
     left: 0;
-    @media screen and (min-width: 1024px) {
-      width: inuit-rem(10px);
-    }
   }
 }
