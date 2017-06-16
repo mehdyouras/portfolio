@@ -53,6 +53,9 @@
       padding: $inuit-global-spacing-unit;
     }
   }
+  @media screen and (min-width: 2300px) {
+    margin-left: $inuit-global-spacing-unit;
+  }
 }
 
 .active {

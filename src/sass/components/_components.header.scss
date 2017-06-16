@@ -12,4 +12,7 @@
     flex-direction: row-reverse;
     margin-top: 0;
   }
+  @media screen and (min-width: 2300px) {
+    justify-content: center;
+  }
 }

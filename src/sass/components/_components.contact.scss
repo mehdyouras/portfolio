@@ -1,0 +1,30 @@
+.contact {
+  padding: 0 $inuit-global-spacing-unit-small;
+  @media screen and (min-width: 424px) {
+    max-width: 30em;
+    width: 65%;
+    margin: auto;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__label {
+    color: $pf-blue;
+    text-transform: uppercase;
+    &:nth-child(n+2) {
+      margin-top: $inuit-global-spacing-unit;
+    }
+  }
+  &__input {
+    margin-top: $inuit-global-spacing-unit-small;
+    background: none;
+    border: 0;
+    border-bottom: 2px solid $pf-pink;
+    outline-color: $pf-pink;
+  }
+  &__submit {
+    background: none;
+    margin-top: $inuit-global-spacing-unit;
+  }
+}

@@ -4,8 +4,6 @@
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
   background: white;
   padding: $inuit-global-spacing-unit;
   box-shadow: 0px 2px 9px 2px rgba(0,0,0,0.09);
@@ -34,12 +32,15 @@
     margin-bottom: $inuit-global-spacing-unit;
     border-bottom: 4px solid $pf-pink;
   }
+  &__text {
+    margin: $inuit-global-spacing-unit;
+  }
   &__header {
     background: $pf-blue;
     padding: $inuit-global-spacing-unit;
     color: white;
   }
-  &_portfolio {
+  &_no-padding {
     padding: 0;
   }
 }

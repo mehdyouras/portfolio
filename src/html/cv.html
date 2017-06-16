@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
-    <title>Site de l'artiste - Mehdy Ouras</title>
+    <title>CV - Mehdy Ouras</title>
 </head>
 <body>
     <header class="header">
@@ -19,8 +19,8 @@
         <nav class="nav">
             <h2 class="u-hidden-visually">Navigation principale</h2>
             <a href="#" class="nav__item">Accueil</a>
-            <a href="#" class="nav__item active">Portfolio</a>
-            <a href="#" class="nav__item">CV</a>
+            <a href="#" class="nav__item">Portfolio</a>
+            <a href="#" class="nav__item active">CV</a>
             <a href="#" class="nav__item">Blog</a>
             <a href="#" class="nav__item">Me contacter</a>
         </nav>
@@ -32,45 +32,59 @@
             <a href="#" class="socials__item socials__item_dribbble"><span class="u-hidden-visually">Dribbble</span></a>
         </nav>
     </header>
-    <article class="main-wrapper">
-        <h2 class="u-hidden-visually">Site de Larry Burrows</h2>
-        <div class="card-wrapper">
-            <div class="card card_no-padding">
-                <header class="card__header">
-                    <div class="tags">
-                        <span class="tags__item">HTML</span>
-                        <span class="tags__item">Front-end</span>
-                        <span class="tags__item">CSS</span>
-                    </div>
-                    <a class="card__title">Site de Larry Burrows</a>
-                    <time datetime="2017-09-12">12/09/2017</time>
-                </header>
-                <img class="card__image" src="img/works/artiste.jpg" alt="Site de l'artiste">
-                <div class="u-center-text">
-                    <a class="cta cta_dark cta_small icons icons_link" href="#">Vers le site</a>
-                </div>
-                <div class="u-center-text">
-                    <a class="cta cta_dark cta_small cta_no-border icons icons_github" href="#">Vers le repo github</a>
-                </div>
-            </div>
-        </div>
+    <section class="main-wrapper">
+        <h2 class="u-hidden-visually">Contenu principal</h2>
+        <section class="introBlock">
+            <img src="img/portrait.jpg" alt="Portrait de Mehdy Ouras">
+            <h3 class="introBlock__title">Mehdy Ouras</h3>
+            <address class="contactInfos">
+                <span class="contactInfos__item icons_pink icons icons_email">mehdy@ouras.be</span>
+                <span class="contactInfos__item icons_pink icons icons_phone">0471 79 85 15</span>
+            </address>
+            <a class="cta cta_lines cta_light" href="cv.html">Portfolio</a>
+        </section>
         <div class="card-wrapper">
             <div class="card">
-                <div class="wysiwyg">
-                    <h3 class="u-blue">Lourd le mec</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laboriosam magni numquam officiis suscipit! Accusamus ad aliquam atque autem dolores facere, ipsam officia omnis quae reiciendis ullam veniam vero voluptatibus!</p>
+                <h3 class="u-hidden-visually">Mon CV</h3>
+                <ol class="o-list-bare">
+                    <li>
+                        <p class="cv__title cv__title_right no-margin-top icons icons_edu"><time datetime="2015">2015</time> - <time datetime="2018">2018</time></p>
+                        <p class="cv__content">
+                            Bachelier en infographie orientation web
+                        </p>
+                    </li>
+                    <li>
+                        <p class="cv__title cv__title_right icons icons_edu"><time datetime="2015">2009</time> - <time datetime="2018">2015</time></p>
+                        <p class="cv__content">
+                            Humanités générales orientation sciences et sciences économiques
+                        </p>
+                    </li>
+                </ol>
+                <dl>
+                    <dt class="cv__title icons icons_globe">Langues parlées</dt>
+                    <dd class="cv__content">Français et anglais</dd>
+
+                    <dt class="cv__title icons icons_code">Langages</dt>
+                    <dd class="cv__content">HTML5</dd>
+                    <dd class="cv__content">CSS3</dd>
+                    <dd class="cv__content">Javascript</dd>
+                    <dd class="cv__content">PHP</dd>
+                </dl>
+
+                <div>
+                    <p class="cv__title icons icons_game">Hobbies</p>
+                    <p class="cv__content">Les technologies (nouvelles ou non), les jeux vidéos, la photographie, boire des coups avec les copains</p>
                 </div>
-                <figure class="figure">
-                    <img class="figure__image" src="img/works/artiste.jpg" alt="Test">
-                    <figcaption class="figure__caption">Larry Burrows paramètrant son appareil photo</figcaption>
-                </figure>
-                <div class="wysiwyg">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laboriosam magni numquam officiis suscipit! Accusamus ad aliquam atque autem dolores facere, ipsam officia omnis quae reiciendis ullam veniam vero voluptatibus!</p>
-                </div>
+
+                <dl class="no-margin-bottom">
+                    <dt class="cv__title icons icons_plus">Extras</dt>
+                    <dd class="cv__content icons icons_car">Permis B</dd>
+                    <dd class="cv__content icons icons_smile">Un sourire</dd>
+                    <dd class="cv__content icons icons_battery">De l'énergie à revendre</dd>
+                </dl>
             </div>
-            div.
         </div>
-    </article>
+    </section>
     <footer class="footer">
         <div class="footer__content">
             <div class="footer__definitions">

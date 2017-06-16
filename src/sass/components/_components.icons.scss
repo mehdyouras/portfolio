@@ -2,7 +2,7 @@
   &:before {
     font-family: FontAwesome;
     //color: $pf-pink;
-    vertical-align: middle;
+    vertical-align: baseline;
     transition: 0.2s;
   }
   &_pink:before {
@@ -50,9 +50,31 @@
   &_battery:before {
     content: "\f240";
     margin-right: $inuit-global-spacing-unit-small - 1px;
-  }&_link:before {
+  }
+  &_link:before {
      content: "\f08e";
      margin-right: $inuit-global-spacing-unit-small - 1px;
+   }
+  &_globe:before {
+     content: "\f0ac";
+     margin-right: $inuit-global-spacing-unit-small;
+   }
+  &_code:before {
+     content: "\f121";
+     margin-right: $inuit-global-spacing-unit-small;
+    vertical-align: text-bottom;
+   }
+  &_game:before {
+     content: "\f11b";
+     margin-right: $inuit-global-spacing-unit-small;
+   }
+  &_plus:before {
+     content: "\f067";
+     margin-right: $inuit-global-spacing-unit-small;
+   }
+  &_edu:before {
+     content: "\f19d";
+     margin-right: $inuit-global-spacing-unit-small;
    }
 
 }
