@@ -1,0 +1,80 @@
+.cta {
+  transition: 0.2s;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Open Sans", SansSerif;
+  padding: $inuit-global-spacing-unit-small $inuit-global-spacing-unit-large;
+  font-size: $inuit-font-size-h3;
+  text-transform: uppercase;
+  letter-spacing: inuit-rem(2px);
+  &_lines { ///////// LINES
+    &::after {
+      transition: 0.4s;
+      position: absolute;
+      display: inline-block;
+      top: 50%;
+      right: 0;
+      width: $inuit-global-spacing-unit-large - 10px;
+      content: "";
+      border-bottom: 3px solid white;
+    }
+    &::before {
+      transition: 0.4s;
+      position: absolute;
+      display: inline-block;
+      top: 50%;
+      left: 0;
+      width: $inuit-global-spacing-unit-large - 10px;
+      content: "";
+      border-bottom: 3px solid white;
+    }
+    &:hover {
+      &::before {
+        top: 35%;
+        border-color: white;
+      }
+      &::after {
+        top: 65%;
+        border-color: white;
+      }
+    }
+  }
+  &_light {
+    color: white;
+    border: 4px solid $pf-pink;
+    &::after, &::before {
+      border-color: $pf-pink;
+    }
+    &:hover {
+      color: $pf-pink;
+      &::after, &::before {
+        border-color: white;
+      }
+    }
+  }
+  &_dark {
+    color: $pf-blue;
+    border: 4px solid $pf-blue;
+    &::after, &::before {
+      border-color: $pf-pink;
+    }
+    &:hover {
+      &::after, &::before {
+        border-color: $pf-blue;
+      }
+    }
+  }
+  &_white {
+    color: white;
+    border: 4px solid white;
+  }
+  &_no-border {
+    border: 0;
+    padding: $inuit-global-spacing-unit-small;
+    font-size: $inuit-font-size-h5;
+  }
+  &_small {
+    font-size: $inuit-font-size-h6;
+  }
+}

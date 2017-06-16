@@ -25,15 +25,32 @@
       width: 0%;
       height: 300px;
       background: $pf-pink;
-      border-bottom: 3px solid $pf-pink;
       position: absolute;
       bottom: 0;
       left: 0;
+      @media screen and (min-width: 1024px) {
+        background: none;
+        border-bottom: 3px solid $pf-pink;
+      }
     }
     &:hover {
       &:after {
         width: 100%;
       }
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    background: none;
+    height: auto;
+    transform: none;
+    position: static;
+    margin-left: auto;
+    &__item {
+      color: white;
+      padding: $inuit-global-spacing-unit;
     }
   }
 }

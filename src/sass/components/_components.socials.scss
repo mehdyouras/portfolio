@@ -5,6 +5,13 @@
     transition: 0.2s;
     color: white;
     padding: 0 $inuit-global-spacing-unit;
+    margin: auto;
+    &:hover {
+      color: $pf-pink;
+    }
+    @media screen and (min-width: 400px) {
+      margin: inherit;
+    }
     &::before {
       font-family: "FontAwesome";
     }
