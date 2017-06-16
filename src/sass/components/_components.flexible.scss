@@ -1,0 +1,18 @@
+.figure {
+  &__image {
+    border-bottom: 4px solid $pf-pink;
+    margin-bottom: $inuit-global-spacing-unit-small;
+  }
+  &__caption {
+    font-style: italic;
+    text-align: center;
+  }
+}
+
+.img-text {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+  }
+}

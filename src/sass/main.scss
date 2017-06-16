@@ -157,6 +157,7 @@ body {display: flex; flex-direction: column;} // STICKY FOOTER
 @import "components/components.contactInfos";
 @import "components/components.card";
 @import "components/components.tags";
+@import "components/components.flexible";
 
 
 
@@ -171,3 +172,4 @@ $inuit-offsets: true;
 @import "node_modules/inuitcss/utilities/utilities.hide";
 @import "utilities/utilities.margin";
 @import "utilities/utilities.colors";
+@import "utilities/utilities.center";

@@ -22,7 +22,9 @@
     display: block;
   }
   &__links {
-    margin: auto;
+    margin:auto;
+    margin-bottom: $inuit-global-spacing-unit;
+    text-align: center;
     font-size: $inuit-font-size-h2;
   }
   &__link {
