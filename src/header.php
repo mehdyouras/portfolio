@@ -16,14 +16,7 @@
             <span class="u-hidden-visually">Menu hamburger</span>
         </div>
     </div>
-    <nav class="nav">
-        <h2 class="u-hidden-visually">Navigation principale</h2>
-        <a href="index.html" class="nav__item active">Accueil</a>
-        <a href="portfolio.html" class="nav__item">Portfolio</a>
-        <a href="cv.html" class="nav__item">CV</a>
-        <a href="blog.html" class="nav__item">Blog</a>
-        <a href="contact.html" class="nav__item">Me contacter</a>
-    </nav>
+    <?php get_template_part('part', 'nav'); ?>
     <nav class="socials">
         <h2 class="u-hidden-visually">Mes réseaux sociaux</h2>
         <a href="#" class="socials__item socials__item_linkedin"><span class="u-hidden-visually">LinkedIn</span></a>
