@@ -1,4 +1,6 @@
 <?php
+add_action('init', 'pf_create_custom_post_types');
+
 add_image_size( 'pf_content', 480);
 add_image_size( 'pf_content_thin', 320);
 
@@ -108,4 +110,31 @@ function pf_the_image($image, $sizeWanted, $class = '', $needCaption = false, $n
     }
     $imageTag = '<img '. $itempropTag .' class="' .$class. '" src="'.$thumb. '" alt="'.$alt.'" />'.$captionTag;
     echo $imageTag;
+}
+
+function pf_create_custom_post_types() {
+    register_post_type('portfolio',[
+        'label' => 'Travaux',
+        'labels' => [
+            'singular_name' => 'Travail',
+            'add_new' => 'Ajouter un travail',
+            'add_new_item' => 'Ajouter un nouveau travail'
+        ],
+        'description' => "Type d'article permettant d'ajouter des travaux",
+        'menu_position' => "20",
+        'menu_icon' => 'dashicons-hammer',
+        'public' => true,
+    ]);
+
+    register_taxonomy('themes', ['post', 'portfolio'], [
+        'label' => 'Thèmes',
+        'labels' => [
+            'singular_name' => 'Thème',
+            'edit_item' => 'Éditer le thème',
+            'add_new_item' => 'Ajouter un nouveau thème'
+        ],
+        'description' => 'Permet de préciser un ou des thèmes pour un travail ou un article',
+        'public' => true,
+        'hierarchical' => true
+    ]);
 }
