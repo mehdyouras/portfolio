@@ -5,37 +5,42 @@
 get_header();
 ?>
 <section class="main-wrapper">
-    <h2 class="u-hidden-visually">Contenu principal</h2>
+    <h2 class="u-hidden-visually"><?= __('Liste de mes publications', 'pf'); ?></h2>
     <section class="introBlock">
-        <img src="img/portrait.jpg" alt="Portrait de Mehdy Ouras">
-        <h3 class="introBlock__title">Mehdy Ouras</h3>
-        <address class="contactInfos">
-            <span class="contactInfos__item icons_pink icons icons_email">mehdy@ouras.be</span>
-            <span class="contactInfos__item icons_pink icons icons_phone">0471 79 85 15</span>
-        </address>
-        <a class="cta cta_lines cta_light" href="cv.html">CV</a>
+        <?php get_template_part('part', 'mehdy'); ?>
+        <a class="cta cta_lines cta_light" href="<?php the_field('cta_link'); ?>"><?php the_field('cta_title'); ?></a>
     </section>
     <section>
-        <h3 class="u-hidden-visually">Liste de mes publications</h3>
+        <h3 class="u-hidden-visually"><?= __('Liste de mes publications', 'pf') ?></h3>
         <ol class="o-list-bare card-wrapper">
+            <?php
+            $args = array(
+                'post_type'         => 'post',
+                'posts_per_page'    => -1,
+                'meta_key'			=> 'post_date',
+                'orderby'			=> 'meta_value',
+                'order'				=> 'DESC');
+            $loop = new WP_Query( $args );
+            while ( $loop->have_posts() ) : $loop->the_post();
+                ?>
             <li class="card card_no-padding">
                 <header class="card__header">
                     <div class="tags">
-                        <span class="tags__item">Front-end</span>
-                        <span class="tags__item">HTML</span>
-                        <span class="tags__item">CSS</span>
-                        <span class="tags__item">JS</span>
+                        <?php foreach(get_field('post_themes') as $theme) : ?>
+                            <span class="tags__item"><?= $theme->name ?></span>
+                        <?php endforeach; ?>
                     </div>
-                    <a href="post.html" class="card__title">à la découverte de ReactJS</a>
-                    <time datetime="2017-09-12">12/09/2017</time>
+                    <a href="<?php the_permalink(); ?>" class="card__title"><?php the_title(); ?></a>
+                    <time datetime="2017-09-12"><?php the_field('post_date'); ?></time>
                 </header>
-                <p class="card__text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At deserunt id laudantium pariatur? Aliquid consequuntur, dignissimos error est labore provident quas. Autem culpa doloremque, dolorum facere nemo non perspiciatis unde.
-                </p>
+                <div class="wysiwyg card__text">
+                    <?php the_field('post_excerpt'); ?>
+                </div>
                 <div class="u-center-text">
-                    <a class="cta cta_lines cta_dark cta_small" href="post.html">Lire plus<span class="u-hidden-visually"> sur à la découverte de reactjs</span></a>
+                    <a class="cta cta_lines cta_dark cta_small" href="<?php the_permalink(); ?>"><?= __('Lire plus', 'pf') ?><span class="u-hidden-visually"><?= __(' sur ', 'pf') ?><?php the_title(); ?></span></a>
                 </div>
             </li>
+            <?php endwhile; ?>
         </ol>
     </section>
 </section>
