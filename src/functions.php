@@ -138,3 +138,19 @@ function pf_create_custom_post_types() {
         'hierarchical' => true
     ]);
 }
+
+function pf_get_permalink_by_title( $title ) {
+    // Initialize the permalink value
+    $permalink = null;
+    // Try to get the page by the incoming title
+    $page = get_page_by_title( strtolower( $title ) );
+    // If the page exists, then let's get its permalink
+    if( null != $page ) {
+        $permalink = get_permalink( $page->ID );
+    } // end if
+    return $permalink;
+} // end theme_get_permalink_by_title
+
+function pf_the_permalink_by_title($title) {
+    echo pf_get_permalink_by_title($title);
+};
