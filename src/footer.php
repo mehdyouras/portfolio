@@ -3,18 +3,18 @@
         <div class="footer__definitions">
             <dl class="definitions">
                 <dt class="definitions__term">Ma localisation</dt>
-                <dd class="definitions__desc icons_pink icons icons_location">Huy, Belgique</dd>
+                <dd class="definitions__desc icons_pink icons icons_location"><?php the_field('mehdy_location', 'options') ?></dd>
             </dl>
             <dl class="definitions">
                 <dt class="definitions__term">Informations de contact</dt>
-                <dd class="definitions__desc icons_pink icons icons_email">mehdy@ouras.be</dd>
-                <dd class="definitions__desc icons_pink icons icons_phone">0471 79 85 15</dd>
+                <dd class="definitions__desc icons_pink icons icons_email"><?php the_field('mehdy_email', 'options') ?></dd>
+                <dd class="definitions__desc icons_pink icons icons_phone"><?php the_field('mehdy_phone', 'options') ?></dd>
             </dl>
         </div>
-        <a class="cta cta_lines cta_white cta_small" href="contact.html">M'engager</a>
+        <a class="cta cta_lines cta_white cta_small" href="contact.html"><?= __('M\'engager','pf');?></a>
     </div>
     <div class="copyright">
-        <small>Copyright © 2017 - Mehdy Ouras. All rights reserved</small>
+        <small><?php the_field('copyright', 'options') ?></small>
     </div>
 </footer>
 <div class="stars" aria-hidden="true">

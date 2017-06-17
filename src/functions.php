@@ -1,4 +1,7 @@
 <?php
+add_image_size( 'pf_content', 480);
+
+
 
 // Get theme asset URI
 function get_pf_asset($resource) {
@@ -56,4 +59,28 @@ function pf_is_active($link, $current_url) {
         $is_active = true;
     }
     return $is_active;
+}
+
+
+// Ajoute page options d'ACF
+if( function_exists('acf_add_options_page') ) {
+    acf_add_options_page(array(
+        'page_title' 	=> 'Mehdy Ouras',
+        'menu_title'	=> 'Mehdy Ouras',
+        'menu_slug' 	=> 'infos',
+        'capability'	=> 'edit_posts',
+        'redirect'		=> true,
+        'icon_url'      => 'dashicons-id-alt',
+        'position'      => '2'
+    ));
+    acf_add_options_sub_page(array(
+        'page_title' 	=> 'Informations',
+        'menu_title'	=> 'Informations',
+        'parent_slug'	=> 'infos',
+    ));
+    acf_add_options_sub_page(array(
+        'page_title' 	=> 'Réseaux sociaux',
+        'menu_title'	=> 'Réseaux sociaux',
+        'parent_slug'	=> 'infos',
+    ));
 }
