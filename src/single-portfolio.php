@@ -13,8 +13,8 @@ get_header();
                     <?php endforeach; ?>
                 </div>
                 <?php endif; ?>
-                <a href="artiste.html" class="card__title"><?php the_title(); ?></a>
-                <time datetime="2017-09-12"><?php the_field('work_date'); ?></time>
+                <a href="<?php the_permalink(); ?>" class="card__title"><?php the_title(); ?></a>
+                <time datetime="2017-09-12"><?php the_field('work_end'); ?></time>
             </header>
             <?php pf_the_image(get_field('work_thumbnail'), 'pf_content_thin', 'card__image', false, false) ?>
             <div class="u-center-text">
