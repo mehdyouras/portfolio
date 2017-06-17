@@ -1,4 +1,7 @@
 <?php
+/*
+        Template Name: Blog
+*/
 get_header();
 ?>
 <section class="main-wrapper">

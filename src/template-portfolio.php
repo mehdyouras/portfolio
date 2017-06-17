@@ -1,4 +1,7 @@
 <?php
+/*
+        Template Name: Portfolio
+*/
 get_header();
 ?>
 <section class="main-wrapper">

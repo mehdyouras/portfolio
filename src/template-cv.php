@@ -1,4 +1,7 @@
 <?php
+/*
+        Template Name: CV
+*/
 get_header();
 ?>
 <section class="main-wrapper">
