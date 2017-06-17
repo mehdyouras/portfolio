@@ -7,13 +7,8 @@ get_header();
 <section class="main-wrapper">
     <h2 class="u-hidden-visually">Contenu principal</h2>
     <section class="introBlock">
-        <img src="img/portrait.jpg" alt="Portrait de Mehdy Ouras">
-        <h3 class="introBlock__title">Mehdy Ouras</h3>
-        <address class="contactInfos">
-            <span class="contactInfos__item icons_pink icons icons_email">mehdy@ouras.be</span>
-            <span class="contactInfos__item icons_pink icons icons_phone">0471 79 85 15</span>
-        </address>
-        <a class="cta cta_lines cta_light" href="cv.html">CV</a>
+        <?php get_template_part('part',"mehdy"); ?>
+        <a class="cta cta_lines cta_light" href="<?php the_field('cta_link') ?>"><?php the_field('cta_title') ?></a>
     </section>
     <section>
         <h3 class="u-hidden-visually">Liste de mes travaux</h3>
