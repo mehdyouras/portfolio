@@ -17,11 +17,5 @@
         </div>
     </div>
     <?php get_template_part('part', 'nav'); ?>
-    <nav class="socials">
-        <h2 class="u-hidden-visually">Mes réseaux sociaux</h2>
-        <a href="#" class="socials__item socials__item_linkedin"><span class="u-hidden-visually">LinkedIn</span></a>
-        <a href="#" class="socials__item socials__item_github"><span class="u-hidden-visually">GitHub</span></a>
-        <a href="#" class="socials__item socials__item_behance"><span class="u-hidden-visually">Behance</span></a>
-        <a href="#" class="socials__item socials__item_dribbble"><span class="u-hidden-visually">Dribbble</span></a>
-    </nav>
+    <?php get_template_part('part', 'socials'); ?>
 </header>
