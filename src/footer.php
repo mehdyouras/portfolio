@@ -13,7 +13,11 @@
                 <?php endif; ?>
             </dl>
         </div>
-        <a class="cta cta_lines cta_white cta_small" href="contact.html"><?= __('M\'engager','pf');?></a>
+        <?php if(strcmp(get_permalink(), pf_get_permalink_by_title('contact'))) : ?>
+        <a class="cta cta_lines cta_white cta_small" href="<?php pf_the_permalink_by_title('contact'); ?>"><?= __('M\'engager','pf');?></a>
+        <?php else : ?>
+        <a class="cta cta_lines cta_white cta_small" href="<?php pf_the_permalink_by_title('portfolio'); ?>"><?= __('Portfolio','pf');?></a>
+        <?php endif; ?>
     </div>
     <div class="copyright">
         <small><?php the_field('copyright', 'options') ?></small>
