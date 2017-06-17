@@ -78,4 +78,9 @@
   &_small {
     font-size: $inuit-font-size-h6;
   }
+  &_force-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
