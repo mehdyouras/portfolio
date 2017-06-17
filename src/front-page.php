@@ -4,11 +4,13 @@ get_header();
 <section class="main-wrapper">
     <h2 class="u-hidden-visually">Contenu principal</h2>
     <section class="introBlock">
-        <img src="img/portrait.jpg" alt="Portrait de Mehdy Ouras">
-        <h3 class="introBlock__title">Mehdy Ouras</h3>
+        <?php pf_the_image(get_field('mehdy_photo', 'options'), 'pf_content_thin', false, false); ?>
+        <h3 class="introBlock__title"><?php the_field('mehdy_name', 'options'); ?></h3>
         <address class="contactInfos">
-            <span class="contactInfos__item icons_pink icons icons_email">mehdy@ouras.be</span>
-            <span class="contactInfos__item icons_pink icons icons_phone">0471 79 85 15</span>
+            <span class="contactInfos__item icons_pink icons icons_email"><?php the_field('mehdy_email', 'options'); ?></span>
+            <?php if(get_field('mehdy_phone', 'options')): ?>
+            <span class="contactInfos__item icons_pink icons icons_phone"><?php the_field('mehdy_phone', 'options'); ?></span>
+            <?php endif; ?>
         </address>
         <a class="cta cta_lines cta_light" href="cv.html">CV</a>
     </section>

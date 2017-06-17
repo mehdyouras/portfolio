@@ -1,5 +1,6 @@
 <?php
 add_image_size( 'pf_content', 480);
+add_image_size( 'pf_content_thin', 320);
 
 
 
@@ -83,4 +84,28 @@ if( function_exists('acf_add_options_page') ) {
         'menu_title'	=> 'Réseaux sociaux',
         'parent_slug'	=> 'infos',
     ));
+}
+
+function pf_the_image($image, $sizeWanted, $class = '', $needCaption = false, $needItemprop = true) {
+    if( !empty($image) ) {
+        // vars
+        $url = $image['url'];
+        $title = $image['title'];
+        $alt = $image['alt'];
+        $caption = $image['caption'];
+        // thumbnail
+        $size = $sizeWanted;
+        $thumb = $image['sizes'][ $size ];
+        $width = $image['sizes'][ $size . '-width' ];
+        $height = $image['sizes'][ $size . '-height' ];
+    }
+    $captionTag = '';
+    if($needCaption) {
+        $captionTag = '<figcaption class="figure__caption">'.$caption.'</figcaption>';
+    }
+    if($needItemprop) {
+        $itempropTag = 'itemprop="image"';
+    }
+    $imageTag = '<img '. $itempropTag .' class="' .$class. '" src="'.$thumb. '" alt="'.$alt.'" />'.$captionTag;
+    echo $imageTag;
 }
