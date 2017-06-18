@@ -2,7 +2,7 @@
 get_header();
 ?>
 <section class="main-wrapper">
-    <h2 class="u-hidden-visually"><?= __('Contenu principal', 'pf') ?></h2>
+    <h2 aria-level=2 class="u-hidden-visually"><?= __('Contenu principal', 'pf') ?></h2>
     <section class="introBlock">
         <?php get_template_part('part',"mehdy"); ?>
         <a class="cta cta_lines cta_light" href="<?php the_field('cta_link'); ?>"><?php the_field('cta_title'); ?></a>

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
     <section class="main-wrapper">
-        <h2 class="u-hidden-visually"><?php the_title(); ?></h2>
+        <h2 aria-level=2 class="u-hidden-visually"><?php the_title(); ?></h2>
         <div class="o-list-bare card-wrapper">
             <div class="card card_no-padding">
                 <header class="card__header">
@@ -17,7 +17,7 @@
             </div>
         </div>
         <?php if(have_rows('flexible')) : ?>
-            <article class="card-wrapper">
+            <article role="article" class="card-wrapper">
                 <?php get_template_part('part','flexible'); ?>
             </article>
         <?php endif; ?>

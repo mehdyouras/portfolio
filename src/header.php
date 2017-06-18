@@ -9,11 +9,11 @@
     <title>Mehdy Ouras</title>
 </head>
 <body>
-<header class="header">
-    <h1 class="u-hidden-visually">Mehdy Ouras</h1>
+<header role="banner" class="header">
+    <h1 aria-level=1 class="u-hidden-visually">Mehdy Ouras</h1>
     <div class="siteHeader">
         <div tabindex="0" class="hamburger">
-            <span class="u-hidden-visually">Menu hamburger</span>
+            <span aria-hidden="true" class="u-hidden-visually">Menu hamburger</span>
         </div>
     </div>
     <?php get_template_part('part', 'nav'); ?>
