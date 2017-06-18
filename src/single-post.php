@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-    <section class="main-wrapper">
+    <article class="main-wrapper">
         <h2 aria-level=2 class="u-hidden-visually"><?php the_title(); ?></h2>
         <div class="o-list-bare card-wrapper">
             <div class="card card_no-padding">
@@ -17,9 +17,9 @@
             </div>
         </div>
         <?php if(have_rows('flexible')) : ?>
-            <article role="article" class="card-wrapper">
+            <div class="card-wrapper">
                 <?php get_template_part('part','flexible'); ?>
-            </article>
+            </div>
         <?php endif; ?>
-    </section>
+    </article>
 <?php get_footer(); ?>

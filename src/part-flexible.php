@@ -9,7 +9,7 @@
                 <?php endif; ?>
                 <?php if(get_sub_field('figure_image')): ?>
                     <figure class="figure">
-                        <?php pf_the_image(get_sub_field('figure_image'), 'pf_content', 'figure__image', true) ?>
+                        <?php pf_the_image(get_sub_field('figure_image'), 'pf_content', 'figure__image', true, false) ?>
                     </figure>
                 <?php endif; ?>
             <?php endwhile; ?>

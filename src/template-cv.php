@@ -11,7 +11,7 @@ get_header();
         <a class="cta cta_lines cta_light" href="<?php the_field('cta_link') ?>"><?php the_field('cta_title') ?></a>
     </section>
     <div class="card-wrapper">
-        <div class="card">
+        <div class="card cv">
             <h3 aria-level=3 class="u-hidden-visually"><?= __('Mon CV', 'pf'); ?></h3>
             <?php if( have_rows('cv_edu') ): ?>
             <ol class="o-list-bare">
