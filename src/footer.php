@@ -1,15 +1,15 @@
-<footer role="contentinfo" class="footer">
+<footer itemscope itemtype="http://schema.org/Person" role="contentinfo" class="footer">
     <div class="footer__content">
         <div class="footer__definitions">
             <dl class="definitions">
                 <dt class="definitions__term"><?= __('Ma localisation','pf'); ?></dt>
-                <dd class="definitions__desc icons_pink icons icons_location"><?php the_field('mehdy_location', 'options') ?></dd>
+                <dd itemprop="address" class="definitions__desc icons_pink icons icons_location"><?php the_field('mehdy_location', 'options') ?></dd>
             </dl>
             <dl class="definitions">
                 <dt class="definitions__term"><?= __('Informations de contact','pf'); ?></dt>
-                <dd class="definitions__desc icons_pink icons icons_email"><?php the_field('mehdy_email', 'options') ?></dd>
+                <dd itemprop="email" class="definitions__desc icons_pink icons icons_email"><?php the_field('mehdy_email', 'options') ?></dd>
                 <?php if(get_field('mehdy_phone', 'options')): ?>
-                <dd class="definitions__desc icons_pink icons icons_phone"><?php the_field('mehdy_phone', 'options') ?></dd>
+                <dd itemprop="telephone" class="definitions__desc icons_pink icons icons_phone"><?php the_field('mehdy_phone', 'options') ?></dd>
                 <?php endif; ?>
             </dl>
         </div>
