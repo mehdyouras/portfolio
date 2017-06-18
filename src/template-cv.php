@@ -18,7 +18,7 @@ get_header();
                 <?php while(have_rows('cv_edu')) : the_row();?>
                 <li>
                     <p class="cv__title cv__title_right no-margin-top icons icons_edu">
-                        <time datetime="<?php the_sub_field('edu_from') ?>"><?php the_sub_field('edu_from') ?></time><?php __(' - ', 'pf'); ?>
+                        <time datetime="<?php the_sub_field('edu_from') ?>"><?php the_sub_field('edu_from') ?></time><?= __(' - ', 'pf'); ?>
                         <?php if(get_sub_field('edu_to')) : ?>
                         <time datetime="<?php the_sub_field('edu_to') ?>"><?php the_sub_field('edu_to') ?></time>
                         <?php endif; ?>
