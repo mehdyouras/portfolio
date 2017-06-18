@@ -1,4 +1,5 @@
 .figure {
+  display: inline-block;
   &__image {
     border-bottom: 4px solid $pf-pink;
     margin-bottom: $inuit-global-spacing-unit-small;

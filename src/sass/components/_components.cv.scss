@@ -1,8 +1,7 @@
 .cv {
-  padding: 0 $inuit-global-spacing-unit-small;
-  max-width: 30em;
-  margin: auto;
+  padding-bottom: $inuit-global-spacing-unit;
   &__title {
+    display: block;
     text-transform: uppercase;
     color: $pf-blue;
     font-weight: bold;
