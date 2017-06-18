@@ -49,7 +49,7 @@ get_header();
                 <dt class="cv__title icons icons_plus"><?= __('Extras', 'pf'); ?></dt>
                 <dd class="cv__content icons icons_car"><?= __('Permis B', 'pf'); ?></dd>
                 <dd class="cv__content icons icons_smile"><?= __('Un sourire', 'pf'); ?></dd>
-                <dd class="cv__content icons icons_battery"><?= __('De l\'énrgie à revendre', 'pf'); ?></dd>
+                <dd class="cv__content icons icons_battery"><?= __('De l\'énergie à revendre', 'pf'); ?></dd>
             </dl>
         </div>
     </div>
