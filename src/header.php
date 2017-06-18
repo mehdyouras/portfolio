@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="<?php pf_asset('css/main.css') ?>">
-    <title>Mehdy Ouras</title>
+    <title><?php if(!is_font_page()) : the_title(); endif; ?><?php bloginfo('name'); ?></title>
 </head>
 <body>
 <header role="banner" class="header">
