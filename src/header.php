@@ -6,7 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="<?php pf_asset('css/main.css') ?>">
-    <title><?php if(!is_font_page()) : the_title(); endif; ?><?php bloginfo('name'); ?></title>
+    <link rel="icon" type="image/png" href="<?php pf_asset('favicon.png')?>" />
+    <title><?php if(!is_front_page()) : the_title(); ?><?= __(' | ', 'pf'); ?><?php endif; ?><?php bloginfo('name'); ?></title>
 </head>
 <body>
 <header role="banner" class="header">

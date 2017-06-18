@@ -70,7 +70,7 @@ gulp.task("fonts", function() {
 
 // -- Task for favicon
 gulp.task("favicon", function() {
-    gulp.src("src/img/favicon.ico")
+    gulp.src("src/img/favicon.png")
         .pipe(gulp.dest("assets/"));
 });
 
