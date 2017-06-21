@@ -10,7 +10,7 @@
     <title><?php if(!is_front_page()) : the_title(); ?><?= __(' | ', 'pf'); ?><?php endif; ?><?php bloginfo('name'); ?></title>
 </head>
 <body>
-<header role="banner" class="header">
+<header class="header">
     <h1 aria-level=1 class="u-hidden-visually">Mehdy Ouras</h1>
     <div class="siteHeader">
         <div tabindex="0" class="hamburger">

@@ -1,7 +1,7 @@
 <?php
 get_header();
 ?>
-<article role="article" class="main-wrapper">
+<article class="main-wrapper">
     <h2 aria-level=2 class="u-hidden-visually">Site de Larry Burrows</h2>
     <div class="card-wrapper">
         <div class="card card_no-padding card_thin">

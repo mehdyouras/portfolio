@@ -1,4 +1,4 @@
-<footer itemscope itemtype="http://schema.org/Person" role="contentinfo" class="footer">
+<footer itemscope itemtype="http://schema.org/Person" class="footer">
     <div class="footer__content">
         <div class="footer__definitions">
             <dl class="definitions">

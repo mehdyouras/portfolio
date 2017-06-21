@@ -23,6 +23,12 @@ add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mime
 
 }, 10, 4 );
 
+/* Autoriser les fichiers SVG */
+function wpc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'wpc_mime_types');
 
 
 // Get theme asset URI
