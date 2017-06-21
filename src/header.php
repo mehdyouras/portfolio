@@ -11,10 +11,10 @@
 </head>
 <body>
 <header class="header">
-    <h1 aria-level=1 class="u-hidden-visually">Mehdy Ouras</h1>
+    <h1 aria-level=1 class="u-hidden-visually"><?php the_field('mehdy_name', 'options') ?></h1>
     <div class="siteHeader">
         <div tabindex="0" class="hamburger">
-            <span aria-hidden="true" class="u-hidden-visually">Menu hamburger</span>
+            <span aria-hidden="true" class="u-hidden-visually"><?= __('Menu hamburger','pf') ?></span>
         </div>
     </div>
     <?php get_template_part('part', 'nav'); ?>

@@ -40,7 +40,7 @@ get_header();
                     <a class="cta cta_lines cta_dark cta_small" href="<?php the_permalink(); ?>"><?= __('En savoir plus', 'pf') ?><span class="u-hidden-visually"><?= __(' sur ', 'pf') ?><?php the_title(); ?></span></a>
                 </div>
                 <div class="card__links">
-                    <a href="<?php the_field('work_site') ?>" class="card__link icons icons_link icons_blue"><span class="u-hidden-visually"><?= __('Vers le site', 'pf') ?>Vers le site</span></a>
+                    <a href="<?php the_field('work_site') ?>" class="card__link icons icons_link icons_blue"><span class="u-hidden-visually"><?= __('Vers le site ', 'pf') ?><?php the_title(); ?></span></a>
                     <a href="<?php the_field('work_git') ?>" class="card__link icons icons_github icons_blue"><span class="u-hidden-visually"><?= __('Vers le repo GitHub', 'pf') ?></span></a>
                 </div>
             </li>
