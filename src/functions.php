@@ -5,6 +5,25 @@ add_image_size( 'pf_content', 480);
 add_image_size( 'pf_content_thin', 320);
 
 
+// Allow SVG
+add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mimes) {
+
+    global $wp_version;
+    if ( $wp_version !== '4.7.1' ) {
+        return $data;
+    }
+
+    $filetype = wp_check_filetype( $filename, $mimes );
+
+    return [
+        'ext'             => $filetype['ext'],
+        'type'            => $filetype['type'],
+        'proper_filename' => $data['proper_filename']
+    ];
+
+}, 10, 4 );
+
+
 
 // Get theme asset URI
 function get_pf_asset($resource) {
