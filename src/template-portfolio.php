@@ -41,7 +41,7 @@ get_header();
                 </div>
                 <div class="card__links">
                     <a href="<?php the_field('work_site') ?>" class="card__link icons icons_link icons_blue"><span class="u-hidden-visually"><?= __('Vers le site ', 'pf') ?><?php the_title(); ?></span></a>
-                    <a href="<?php the_field('work_git') ?>" class="card__link icons icons_github icons_blue"><span class="u-hidden-visually"><?= __('Vers le repo GitHub', 'pf') ?></span></a>
+                    <a href="<?php the_field('work_git') ?>" class="card__link icons icons_github icons_blue"><span class="u-hidden-visually"><?= __('Vers le repo GitHub de ', 'pf') ?><?php the_title(); ?></span></a>
                 </div>
             </li>
             <?php endwhile; ?>
